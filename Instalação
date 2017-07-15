@@ -1,0 +1,20 @@
+#Instalando a dependências
+sudo apt-get install build-essential linux-headers-`uname -r`
+
+#Veja a arquitetura do seu sistema e instale a opção adequada, vide site
+#da Vmware, https://softwareupdate.vmware.com/cds/vmw-desktop/player/
+
+#Baixando
+"wget -c https://softwareupdate.vmware.com/cds/vmw-desktop/player/12.5.7/5813279/linux
+/core/VMware-Player-12.5.7-5813279.x86_64.bundle.tar -O VMware-Player.tar"
+
+#Descompacte
+tar -xvf VMware-Player.tar
+
+#Instale
+sudo sh VMware-Player*
+
+#Nem todo mundo curte, e se você é um deles, segue;
+sudo sh VMware-Player* --uninstall-product vmware-player
+
+#.peac3!
